@@ -251,14 +251,16 @@ body {
     background: #cf2e2f;
     color: white;
     border: none;
-    padding: 10px 100px;
+    padding: 10px 120px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 50px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
-
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 30px;
 }
 
 .video-btn:hover {
@@ -350,13 +352,14 @@ body {
 .from-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: medium;
     color: white;
     letter-spacing: 2px;
     display: block;
     margin-bottom: 20px;
+    text-align: left;
+    padding-left: 120px; /* Adjust this value as needed */
 }
-
 .arbor-logo {
     display: flex;
     justify-content: center;
@@ -366,7 +369,8 @@ body {
     max-width: 250px;
     height: auto;
     object-fit: contain;
-    filter: brightness(0.5) sepia(1) saturate(0) hue-rotate(0deg);
+    position: relative;
+    top: -20px; /* lifts the logo slightly upward */
 }
 
 /* Responsive Design */
