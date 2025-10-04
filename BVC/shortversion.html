@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMA - Realty Masters & Associates</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.header-section {
+    position: relative;
+    overflow: hidden;
+}
+.black-container{
+    background-color: black;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.rma-logo {
+    text-align: center;
+    margin-bottom: 110px;
+    margin-top: 50px;
+}
+
+.rma-logo-img {
+    height: 60px;
+    width: auto;
+    filter: brightness(.8);
+}
+
+.header-content {
+    display: flex;
+    align-items: flex-end;
+    background-color: #cf2e2f;
+    height: 190px;
+
+}
+.woman-img {
+    width: 170px;
+    height: 300px;
+    display: flex;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Main Content */
+.main-content {
+    padding: 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 50px 45px;
+    text-align: justify;
+    background: white;
+}
+
+.greeting {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.welcome-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: black;
+}
+
+.welcome-text strong {
+    font-weight: 600;
+}
+
+/* Get Started Section */
+.get-started-section {
+    background: #e9e9e9;
+    padding: 10px 20px;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.step-card {
+    background: #cf2e2f;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    flex-shrink: 0;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.step-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: medium;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.pro-container{
+    padding: 30px 50px;
+    text-align: justify;
+    background: white;
+}
+
+
+.pro-tip p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: medium;
+    text-align: justify;
+    font-size: 16px;
+    color: black;
+
+}
+.pro-container {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 590px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pro-tip p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #313131; /* pure black */
+  line-height: 1.5;
+  margin: 0;
+
+}
+
+/* Video Section */
+.video-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.027), rgba(0,0,0,0.005)), url('https://raw.githubusercontent.com/marvinfelipe/RMAImages/refs/heads/main/videoteam.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.video-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.video-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+      filter: invert(14%) sepia(100%) saturate(6641%) hue-rotate(345deg) brightness(88%) contrast(97%);
+
+}
+
+.video-png {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.video-icon:hover {
+    transform: scale(1.1);
+}
+
+.video-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #cf2e2f;
+}
+
+.video-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white;
+    text-align: justify;
+}
+
+.video-btn {
+    background: #cf2e2f;
+    color: white;
+    border: none;
+    padding: 10px 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.video-btn:hover {
+    background: #a02622;
+    transform: translateY(-2px);
+}
+
+/* Download Section */
+.download-section {
+    background: #12403c;
+    padding: 40px 10px;
+    text-align: center;
+    color: white;
+}
+
+.download-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.download-intro {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: medium;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.download-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #cf2e2f;
+    margin-bottom: 10px;
+}
+
+.download-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.app-store-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-store-btn {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.app-store-btn:hover {
+    transform: scale(1.05);
+}
+
+.app-store-btn img {
+    height: 80px;
+    width: auto;
+}
+
+/* Family Section */
+.family-section {
+    background: #12403c;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+.team-image {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.team-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.family-content {
+    padding: 30px 20px;
+    background: #12403c;
+}
+
+.from-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: medium;
+    color: white;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 120px; /* Adjust this value as needed */
+}
+.arbor-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.arbor-logo-img {
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    top: -20px; /* lifts the logo slightly upward */
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .steps-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .woman-img {
+        width: 100px;
+    }
+    
+    .main-title {
+        font-size: 20px;
+    }
+    
+    .step-card {
+        padding-top: 35px;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+        top: -20px;
+    }
+    
+    .step-title {
+        font-size: 14px;
+    }
+    
+    .app-store-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .download-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        max-width: 100%;
+    }
+    
+    .header-section {
+        padding: 15px;
+    }
+    
+    .main-title {
+        font-size: 18px;
+    }
+    
+    .welcome-section,
+    .get-started-section {
+        padding: 25px 15px;
+    }
+    
+    .video-section,
+    .download-section {
+        padding: 40px 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section with Woman and RMA Logo -->
+        <header class="header-section">
+            <div class="rma-logo">
+                <img src="https://raw.githubusercontent.com/marvinfelipe/RMAImages/refs/heads/main/Vector Smart Object.png" alt="RMA Logo" class="rma-logo-img">
+            </div>
+            <div class="header-content">
+                <div class="woman-image">
+                    <img src="https://raw.githubusercontent.com/marvinfelipe/RMAImages/refs/heads/main/Layer 1.png" alt="Woman with phone" class="woman-img">
+                </div>
+                <div class="black-container">
+                <div class="header-text">
+                    <h1 class="main-title">INSTANTLY GENERATE NET SHEETS WITH THIS EXCLUSIVE TOOL</h1>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Change Name -->
+        <main class="main-content">
+            <div class="welcome-section">
+                <p class="greeting">Hi [Change Name],</p>
+                <p class="welcome-text">Welcome to <strong>Realty Masters & Associates!</strong> As a new agent, you now have exclusive access to the <strong>Arbor One Escrow Net Sheets App</strong>—your shortcut to instant, accurate net sheets.</p>
+            </div>
+
+            <!-- How to Get Started Section -->
+            <section class="get-started-section">
+                <h2 class="section-title">HERE'S HOW TO GET STARTED:</h2>
+                
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Download the App - Search "Arbor One Escrow" in the App Store (iOS) or Google Play (Android).</h3>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Create Your Account - Enter your rep code: [Insert Code Here] [all fields required].</h3>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Run Your First Estimate - Choose Seller or Buyer, input details, and generate a polished net sheet in seconds.</h3>
+                    </div>
+                </div>
+                
+            </section>
+           <div class="pro-container">
+    <div class="pro-tip">
+        <p><strong>Pro tip:</strong> Have the sale price, payoff amounts, commission %, HOA dues, and any credits handy for the most accurate results.</p>
+    </div>
+</div>
+            <!-- Video Resource Section -->
+            <section class="video-section">
+                <div class="video-content">
+                    <div class="video-icon">
+                        <img src="https://raw.githubusercontent.com/marvinfelipe/RMAImages/refs/heads/main/video.png" alt="Play Video" class="video-png">
+                    </div>
+                    <h2 class="video-title">VIDEO RESOURCE HUB</h2>
+                    <p class="video-description">Need a quick walkthrough? Visit the Video Resource Hub to guide you through every step of the app – from setup to advance features.</p>
+                  <button class="video-btn" onclick="window.open('https://www.youtube.com/playlist?list=PLGoZYzigJSzXKfcOuV7uOodak4fEAld3v', '_blank')">CLICK HERE</button>
+
+                </div>
+            </section>
+
+            <!-- Download Section -->
+            <section class="download-section">
+                <div class="download-content">
+                    <p class="download-intro">This tool will help you look polished and prepared in every listing appointment, open house, or client meeting.</p>
+                    <h2 class="download-title">DOWNLOAD NOW</h2>
+                    <p class="download-subtitle">and start impressing clients today!</p>
+                    
+                    <div class="app-store-buttons">
+                        <a href="https://apps.apple.com/us/app/arbor-one-escrow/id6748372748" class="app-store-btn">
+                            <img src="https://raw.githubusercontent.com/marvinfelipe/RMAImages/refs/heads/main/App Store.png" alt="Download on App Store">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.newhomepage.aoe" class="app-store-btn">
+                            <img src="https://raw.githubusercontent.com/marvinfelipe/RMAImages/refs/heads/main/Google Play.png" alt="Get it on Google Play">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Welcome to Family Section -->
+            <section class="family-section">
+                <div class="team-image">
+                    <img src="https://raw.githubusercontent.com/marvinfelipe/RMAImages/refs/heads/main/teampicture.png" alt="Team Photo" class="team-img">
+                </div>
+                <div class="family-content">
+                    <span class="from-text">FROM</span>
+                    <div class="arbor-logo">
+                        <img src="https://raw.githubusercontent.com/marvinfelipe/RMAImages/refs/heads/main/Arbor.png" alt="Arbor One Escrow Logo" class="arbor-logo-img">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
