@@ -176,6 +176,23 @@ body {
     text-align: justify;
     font-size: 16px;
     color: black;
+
+.pro-container {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 590px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pro-tip p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #313131; /* pure black */
+  line-height: 1.5;
+  margin: 0;
+
 }
 
 /* Video Section */
@@ -419,4 +436,5 @@ body {
     .download-section {
         padding: 40px 15px;
     }
+}
 }
