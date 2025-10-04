@@ -474,24 +474,24 @@ body {
 /* App Download Section */
 .app-download-section {
     background: white;
-    padding: 40px 20px;
     margin: 20px auto;
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
 }
+.bahiBackground{
+    background-image: url('../img/Bahi.png');
+}
 
 .download-content-wrapper {
-    max-width: 600px;
     display: flex;
     gap: 30px;
     min-height: 200px;
-    padding: 30px;
     background: white;
+    width: 100%;
 }
 .woman-phone-img {
-    width: auto;
-    max-width: 200px;
+    width: 100%;
     height: auto;
 }
 
@@ -543,18 +543,13 @@ body {
 
 /* Responsive Design for App Download */
 @media (max-width: 600px) {
-    .download-content-wrapper {
-        gap: 30px;
-        padding: 20px;
-    }
+    
     
     .download-image {
         flex: none;
     }
     
-    .woman-phone-img {
-        max-width: 250px;
-    }
+ 
     
     .download-text-content {
         text-align: center;
@@ -706,6 +701,17 @@ body {
 .video-btn:hover {
     background: #c0392b;
     transform: translateY(-2px);
+}
+.team-section{
+    text-align: center;
+    height: auto;
+    align-content: center;
+}
+.team-section img{
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 .family-section{
     background-color: #12403c;
@@ -882,8 +888,6 @@ body {
 
 @media (max-width: 600px) {
     .download-content-wrapper {
-        text-align: center;
-        max-width: 600px;
     }
 
     .download-text-content {
