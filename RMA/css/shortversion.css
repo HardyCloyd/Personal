@@ -198,7 +198,7 @@ body {
 
 /* Video Section */
 .video-section {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../img/videoteam.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.027), rgba(0,0,0,0.005)), url('https://raw.githubusercontent.com/marvinfelipe/RMAImages/refs/heads/main/videoteam.png');
     background-size: cover;
     background-position: center;
     padding: 60px 20px;
@@ -217,6 +217,8 @@ body {
     margin: 0 auto 20px;
     cursor: pointer;
     transition: transform 0.3s ease;
+      filter: invert(14%) sepia(100%) saturate(6641%) hue-rotate(345deg) brightness(88%) contrast(97%);
+
 }
 
 .video-png {
