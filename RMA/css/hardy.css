@@ -380,7 +380,6 @@ body {
 /* How to Get Started Section */
 .get-started-section {
     background: white;
-    padding: 80px 20px;
     text-align: center;
 }
 
@@ -474,7 +473,6 @@ body {
 /* App Download Section */
 .app-download-section {
     background: white;
-    margin: 20px auto;
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
@@ -484,38 +482,50 @@ body {
 }
 
 .download-content-wrapper {
-    display: flex;
-    gap: 30px;
+    position: relative;
     min-height: 200px;
-    background: white;
     width: 100%;
 }
+
 .woman-phone-img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
-.download-text-area {
-    flex: 1;
+/* .download-text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    width: 90%;
+} */
+.download-text-content {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    /* transform: translate(-50%, -50%); */
+    /* z-index: 1; */
     text-align: left;
+    width: 50%;
 }
 
 .download-main-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: #e74c3c;
+    color: #cf2e2f;
     margin-bottom: 15px;
-    text-align: left;
-    display: flex;
+    display: block;
 }
 
 .download-description {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    text-align: left;
-    font-weight: 400;
-    color: #2c3e50;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
     margin-bottom: 30px;
     line-height: 1.4;
 }
@@ -523,8 +533,7 @@ body {
 .app-store-buttons {
     display: flex;
     gap: 15px;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .app-store-btn {
@@ -551,18 +560,13 @@ body {
     
  
     
-    .download-text-content {
-        text-align: center;
-    }
+  
     
     .download-main-title {
         font-size: 2rem;
     }
     
-    .app-store-buttons {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+ 
 }
 
 /* Download Section */
@@ -890,17 +894,9 @@ body {
     .download-content-wrapper {
     }
 
-    .download-text-content {
-        text-align: center;
-    }
+ 
 
-    .download-main-title {
-        text-align: center;
-    }
-
-    .app-store-buttons {
-        justify-content: center;
-    }
+   
 }
 
 /* Small Mobile Portrait */
