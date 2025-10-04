@@ -251,14 +251,16 @@ body {
     background: #cf2e2f;
     color: white;
     border: none;
-    padding: 10px 100px;
+    padding: 10px 120px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 50px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
-
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 30px;
 }
 
 .video-btn:hover {
