@@ -177,6 +177,7 @@ body {
     font-size: 16px;
     color: black;
 
+}
 .pro-container {
   margin-top: 20px;
   margin-left: 20px;
@@ -436,5 +437,4 @@ body {
     .download-section {
         padding: 40px 15px;
     }
-}
 }
