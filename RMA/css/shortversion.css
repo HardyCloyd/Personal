@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.header-section {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rma-logo {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.rma-logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.woman-image {
+    flex-shrink: 0;
+}
+
+.woman-img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Main Content */
+.main-content {
+    padding: 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 30px 20px;
+    background: white;
+}
+
+.greeting {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.welcome-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+}
+
+.welcome-text strong {
+    font-weight: 600;
+}
+
+/* Get Started Section */
+.get-started-section {
+    background: #f8f9fa;
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.step-card {
+    background: #e74c3c;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: white;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.pro-tip {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.pro-tip p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+/* Video Section */
+.video-section {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../img/videoteam.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.video-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.video-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.video-png {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.video-icon:hover {
+    transform: scale(1.1);
+}
+
+.video-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #cf2e2f;
+}
+
+.video-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.video-btn {
+    background: #cf2e2f;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.video-btn:hover {
+    background: #a02622;
+    transform: translateY(-2px);
+}
+
+/* Download Section */
+.download-section {
+    background: #12403c;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.download-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.download-intro {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.download-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #cf2e2f;
+    margin-bottom: 10px;
+}
+
+.download-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.app-store-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-store-btn {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.app-store-btn:hover {
+    transform: scale(1.05);
+}
+
+.app-store-btn img {
+    height: 50px;
+    width: auto;
+}
+
+/* Family Section */
+.family-section {
+    background: #12403c;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+.team-image {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.team-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.family-content {
+    padding: 30px 20px;
+    background: #12403c;
+}
+
+.from-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.arbor-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.arbor-logo-img {
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .woman-img {
+        width: 100px;
+    }
+    
+    .main-title {
+        font-size: 20px;
+    }
+    
+    .step-card {
+        padding: 15px;
+    }
+    
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    .step-title {
+        font-size: 13px;
+    }
+    
+    .app-store-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .download-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        max-width: 100%;
+    }
+    
+    .header-section {
+        padding: 15px;
+    }
+    
+    .main-title {
+        font-size: 18px;
+    }
+    
+    .welcome-section,
+    .get-started-section {
+        padding: 25px 15px;
+    }
+    
+    .video-section,
+    .download-section {
+        padding: 40px 15px;
+    }
+}
